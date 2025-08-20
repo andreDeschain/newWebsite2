@@ -4,13 +4,13 @@ const ServicesSection = () => {
     {
       number: "01",
       title: "marketing automation",
-      description: "The marking supply chain involves many stakeholders, data are never there and manual steps are common. You hope to find an expert on your platform. We will make your communications reach your customers, whatever it takes.",
+      description: "The marketing supply chain involves many stakeholders, data are never there and manual steps are common. You hope to find an expert on your platform. We will make your communications reach your customers, whatever it takes.",
       gradient: "from-orange-500 to-red-500"
     },
     {
       number: "02", 
       title: "data management, reporting, governance",
-      description: "Dashboards pile up and you never find that number you need. SQL is a nightmare. You data pipeline is undocumented. You deserve not to struggle when you read your data.",
+      description: "Dashboards pile up and you never find that number you need. SQL is a nightmare. Your data pipeline is undocumented. You deserve not to struggle when you read your data.",
       gradient: "from-blue-500 to-purple-500"
     },
     {
