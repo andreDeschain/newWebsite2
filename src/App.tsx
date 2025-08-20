@@ -23,7 +23,8 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <Toaster />
     <Sonner />
-    <BrowserRouter basename={import.meta.env.PROD ? '/newWebsite2' : '/'}>
+    <BrowserRouter basename='/' /*basename={import.meta.env.PROD ? '/newWebsite2' : '/'}*/
+    > 
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
