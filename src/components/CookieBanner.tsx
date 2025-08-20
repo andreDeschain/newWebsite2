@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// Remove the Link import if it's no longer used
-// import { Link } from 'react-router-dom';
 
 const COOKIE_ACCEPTED_KEY = 'cookies_accepted';
 
@@ -27,11 +25,21 @@ const CookieBanner: React.FC = () => {
     <div className="fixed bottom-4 right-4 z-50 max-w-sm rounded-lg bg-gray-900 p-4 shadow-xl">
       <p className="text-sm leading-relaxed text-white">
         To ensure our website functions correctly, we use technical cookies. These are essential for providing you with the best possible browsing experience. For more details about the cookies we use, please refer to our{' '}
-        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">
+        <a
+          href={`${import.meta.env.BASE_URL}privacy-policy`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-300"
+        >
           Privacy Policy
         </a>{' '}
         and{' '}
-        <a href="/cookie-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">
+        <a
+          href={`${import.meta.env.BASE_URL}cookie-policy`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-300"
+        >
           Cookie Policy
         </a>
         .
