@@ -26,7 +26,7 @@ const CookieBanner: React.FC = () => {
       <p className="text-sm leading-relaxed text-white">
         To ensure our website functions correctly, we use technical cookies. These are essential for providing you with the best possible browsing experience. For more details about the cookies we use, please refer to our{' '}
         <a
-          href={`${import.meta.env.BASE_URL}privacy-policy`}
+          href={`/privacy-policy`}//href={`${import.meta.env.BASE_URL}privacy-policy`}
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-gray-300"
@@ -35,7 +35,7 @@ const CookieBanner: React.FC = () => {
         </a>{' '}
         and{' '}
         <a
-          href={`${import.meta.env.BASE_URL}cookie-policy`}
+          href={`/cookie-policy`}//href={`${import.meta.env.BASE_URL}cookie-policy`}
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-gray-300"
