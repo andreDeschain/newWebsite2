@@ -1,6 +1,21 @@
 import { useEffect } from "react";
 
 const ContactSection = () => {
+  // Input validation functions
+  const validateEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const sanitizeInput = (input: string): string => {
+    return input.trim().replace(/[<>'"&]/g, '').slice(0, 500);
+  };
+
+  const validatePhone = (phone: string): boolean => {
+    const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+    return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
+  };
+
   useEffect(() => {
     // Form submission handler
     const form = document.getElementById('subscribe-form');
@@ -10,13 +25,45 @@ const ContactSection = () => {
       
       // Collect form data
       const formData = new FormData(form as HTMLFormElement);
-      const data = {
-        fullName: formData.get('FNAME') || null,
-        email: formData.get('EMAIL') || null,
-        phone: formData.get('PHONE') || null,
-        company: formData.get('COMPANY') || null,
-        inquiry: formData.get('INQUIRY') || null,
+      const rawData = {
+        fullName: formData.get('FNAME') as string || '',
+        email: formData.get('EMAIL') as string || '',
+        phone: formData.get('PHONE') as string || '',
+        company: formData.get('COMPANY') as string || '',
+        inquiry: formData.get('INQUIRY') as string || '',
         privacyConsent: formData.get('PRIVACY') === 'Yes'
+      };
+
+      // Client-side validation
+      if (!rawData.email || !validateEmail(rawData.email)) {
+        if ((window as any).sonnerToast) {
+          (window as any).sonnerToast.error('Please enter a valid email address.');
+        }
+        return;
+      }
+
+      if (rawData.phone && !validatePhone(rawData.phone)) {
+        if ((window as any).sonnerToast) {
+          (window as any).sonnerToast.error('Please enter a valid phone number.');
+        }
+        return;
+      }
+
+      if (!rawData.privacyConsent) {
+        if ((window as any).sonnerToast) {
+          (window as any).sonnerToast.error('Please consent to being contacted.');
+        }
+        return;
+      }
+
+      // Sanitize inputs
+      const data = {
+        fullName: sanitizeInput(rawData.fullName) || null,
+        email: sanitizeInput(rawData.email) || null,
+        phone: sanitizeInput(rawData.phone) || null,
+        company: sanitizeInput(rawData.company) || null,
+        inquiry: sanitizeInput(rawData.inquiry) || null,
+        privacyConsent: rawData.privacyConsent
       };
       
       const apiUrl = import.meta.env.VITE_API_URL;
