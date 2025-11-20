@@ -19,7 +19,7 @@ const ContactSection = () => {
         privacyConsent: formData.get('PRIVACY') === 'Yes'
       };
       
-      const apiUrl = 'https://api.lucanos.it:40000/cust/';
+      const apiUrl = import.meta.env.VITE_API_URL;
 
       try {
         const response = await fetch(apiUrl, {
