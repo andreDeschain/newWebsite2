@@ -17,7 +17,7 @@ const PrivacyPolicy: React.FC = () => {
 
                     <h2 className="text-2xl font-semibold">Data Controller</h2>
                     <p>
-                        <strong>Lucano's Co</strong>, with registered office at <strong>Via Benedetto Croce 1, 20090 Trezzano sul Naviglio (MI)</strong>, VAT number <strong>13619460960</strong>, acts as the Data Controller.
+                        <strong>Lucano's Co</strong>, with registered office at <strong>Via IV Novembre 3, 20094 Corsico (MI)</strong>, VAT number <strong>13619460960</strong>, acts as the Data Controller.
                     </p>
                     <p>
                         Contact methods:
@@ -77,7 +77,7 @@ const PrivacyPolicy: React.FC = () => {
 
                     <h2 className="text-2xl font-semibold">Data Subject Rights</h2>
                     <p>
-                        Users may contact Lucano's Co at <strong>Via Benedetto Croce 1, 20090 Trezzano sul Naviglio (MI)</strong> or email{' '}
+                        Users may contact Lucano's Co at <strong>Via IV Novembre 3, 20094 Corsico (MI)</strong> or email{' '}
                         <a href="mailto:andrea@lucanos.it" className="text-primary underline hover:text-orange-500">
                             andrea@lucanos.it
                         </a>{' '}

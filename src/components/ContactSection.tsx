@@ -220,7 +220,26 @@ const ContactSection = () => {
         
         <div className="text-center mt-16 text-xs text-gray-500">
           All rights reserved © Lucano's co - VAT IT13619460960<br />
-          Via Benedetto Croce 1, 20090 Trezzano sul Naviglio (MI), Italy
+          Via IV Novembre 3, 20094 Corsico (MI), Italy<br />
+          <div className="mt-2">
+            <a
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300"
+            >
+              Privacy Policy
+            </a>
+            {' | '}
+            <a
+              href="/cookie-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300"
+            >
+              Cookie Policy
+            </a>
+          </div>
         </div>
       </div>
     </section>
