@@ -12,8 +12,8 @@ const HeroSection = () => {
         </h1>
         
         <div className="flex items-center justify-center space-x-3 mt-16">
+          <span className="text-white text-sm max-[800px]:text-lg max-[800px]:font-semibold max-[800px]:[text-shadow:_0_0_8px_#000000aa,_0_0_16px_#132f44cc]">Straight to the point</span>
           <div className="w-3 h-3 bg-primary rounded-full"></div>
-          <span className="text-gray-400 text-sm">Straight to the point</span>
         </div>
         
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">

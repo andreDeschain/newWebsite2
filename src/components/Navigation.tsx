@@ -14,16 +14,16 @@ const Navigation = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-8 bg-black/20 backdrop-blur-sm rounded-full px-6 py-2 border border-border">
-          <a href="#home" className="text-foreground hover:text-primary transition-colors text-sm">
+          <a href="/#home" className="text-foreground hover:text-primary transition-colors text-sm">
             home
           </a>
-          <a href="#services" className="text-foreground hover:text-primary transition-colors text-sm">
+          <a href="/#services" className="text-foreground hover:text-primary transition-colors text-sm">
             our services
           </a>
           <a href="https://www.linkedin.com/company/lucanos-co" className="text-foreground hover:text-primary transition-colors text-sm">
             linkedin
           </a>
-          <a href="#contact" className="text-foreground hover:text-primary transition-colors text-sm">
+          <a href="/#contact" className="text-foreground hover:text-primary transition-colors text-sm">
             contact
           </a>
         </div>

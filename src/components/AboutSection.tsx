@@ -9,13 +9,13 @@ const AboutSection = () => {
         about us
       </h2>
 
-      <p className="text-gray-300 text-lg leading-relaxed mb-8">
+      <p className="text-gray-300 text-lg leading-relaxed mb-8 max-[800px]:bg-black/30 max-[800px]:backdrop-blur-sm max-[800px]:p-6 max-[800px]:rounded-lg max-[800px]:border max-[800px]:border-border">
         The tech world is moving fast, and not always in the right direction.
         With the AI wave, too many companies have chosen hype over substance.<br />
-        At Lucano’s Co. we take a different path. We’re here to help you make sense of the technology market, cutting through complexity with lean processes and strategies that actually work.<br />
-        Our approach is straightforward: focus on what drives value, strip away what doesn’t, and deliver results you can measure.<br />
-        Whether you’re adopting new technologies, optimizing operations, or exploring the potential of AI, we bring clarity, efficiency, and a results-driven mindset to every step.<br />
-        At Lucano’s Co. we don’t sell promises - we build outcomes.
+        At Lucano's Co. we take a different path. We're here to help you make sense of the technology market, cutting through complexity with lean processes and strategies that actually work.<br />
+        Our approach is straightforward: focus on what drives value, strip away what doesn't, and deliver results you can measure.<br />
+        Whether you're adopting new technologies, optimizing operations, or exploring the potential of AI, we bring clarity, efficiency, and a results-driven mindset to every step.<br />
+        At Lucano's Co. we don't sell promises - we build outcomes.
       </p>
 
       {/*<button className="text-primary hover:text-accent transition-colors text-sm font-medium underline">
