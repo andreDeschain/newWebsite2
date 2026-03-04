@@ -5,7 +5,7 @@ const AboutSection = () => {
   <div className="max-w-6xl mx-auto w-full">
     {/* Wider inner container */}
     <div className="w-full max-w-4xl">
-      <h2 className="text-5xl md:text-6xl font-light text-white mb-12">
+      <h2 className="text-5xl md:text-6xl font-light text-foreground mb-12">
         about us
       </h2>
 

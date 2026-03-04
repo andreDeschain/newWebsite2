@@ -5,7 +5,7 @@ const CookiePolicy: React.FC = () => {
   return (
     <>
       <Navigation />
-      <div className="container mx-auto max-w-4xl px-6 py-20 text-white">
+      <div className="container mx-auto max-w-4xl px-6 py-20 text-foreground">
         <h1 className="mb-8 text-4xl font-light md:text-5xl">Cookie Policy</h1>
 
         <section className="space-y-6">

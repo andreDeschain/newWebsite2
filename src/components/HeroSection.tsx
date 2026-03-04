@@ -3,7 +3,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative">
       <div className="text-center z-10 px-6">
-        <h1 className="text-6xl md:text-8xl font-light text-white mb-8 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-light text-foreground mb-8 leading-tight">
           engineering
           <br />
           <span className="text-primary">&</span>

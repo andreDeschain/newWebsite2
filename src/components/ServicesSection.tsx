@@ -5,44 +5,44 @@ const ServicesSection = () => {
       number: "01",
       title: "marketing automation",
       description: "The marketing supply chain involves many stakeholders, data are never there and manual steps are common. You hope to find an expert on your platform. We will make your communications reach your customers, whatever it takes.",
-      gradient: "from-orange-500 to-red-500"
+      gradient: "from-primary to-orange-400"
     },
     {
       number: "02", 
       title: "data management, reporting, governance",
       description: "Dashboards pile up and you never find that number you need. SQL is a nightmare. Your data pipeline is undocumented. You deserve not to struggle when you read your data.",
-      gradient: "from-blue-500 to-purple-500"
+      gradient: "from-orange-300 to-primary"
     },
     {
       number: "03",
       title: "software development",
       description: "You have an idea and want to make it real? We help you develop the system you're looking for, being it a web platform for your users, an ecommerce, or a new mobile app version of your ecosystem. Someone said AI chatbot?",
-      gradient: "from-green-500 to-teal-500"
+      gradient: "from-amber-400 to-orange-400"
     },
     {
       number: "04",
       title: "system integration",
       description: "You're losing your mind matching the pieces of systems and platforms which don't talk with each other? Talk with us!",
-      gradient: "from-indigo-500 to-purple-500"
+      gradient: "from-orange-400 to-amber-300"
     },
     {
       number: "05",
       title: "IT and system engineering", 
       description: "You need to set up your company infrastructure, and kit your team with the most advanced gear?",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-amber-300 to-yellow-300"
     },
     {
       number: "06",
       title: "cloud hosting & private AI",
       description: "Cloud costs and data ownership may be the biggest challenges of our time. Are you evaluating a cloud migration? Want to leverage artificial intelligence for your company but in a private and safe setting for your data?",
-      gradient: "from-teal-500 to-blue-500"
+      gradient: "from-yellow-300 to-orange-300"
     }
   ];
 
   return (
     <section id="services" className="py-20 px-6 relative">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-light text-white mb-16">
+        <h2 className="text-5xl md:text-6xl font-light text-foreground mb-16">
           our services
         </h2>
         
@@ -56,7 +56,7 @@ const ServicesSection = () => {
                 <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${service.gradient} flex items-center justify-center text-black text-sm font-bold`}>
                   {service.number}
                 </div>
-                <h3 className="text-white font-light text-lg">
+                <h3 className="text-foreground font-light text-lg">
                   {service.title}
                 </h3>
               </div>

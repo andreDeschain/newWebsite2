@@ -6,7 +6,7 @@ const PrivacyPolicy: React.FC = () => {
         <>
             <Navigation />
             {/* This div acts as a container for your text, similar to your other pages. */}
-            <div className="container mx-auto max-w-4xl px-6 py-20 text-white">
+            <div className="container mx-auto max-w-4xl px-6 py-20 text-foreground">
                 <h1 className="mb-8 text-4xl font-light md:text-5xl">Privacy Notice for Website Visitors</h1>
                 <section className="space-y-6">
                     <h2 className="text-2xl font-semibold">Introduction</h2>

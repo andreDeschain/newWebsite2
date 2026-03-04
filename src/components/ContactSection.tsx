@@ -113,7 +113,7 @@ const ContactSection = () => {
     <section id="contact" className="py-20 px-6 relative min-h-screen flex items-center">
       <div className="max-w-4xl mx-auto w-full">
         <div className="text-center mb-16">
-          <h2 className="text-6xl md:text-8xl font-light text-white mb-4">
+          <h2 className="text-6xl md:text-8xl font-light text-foreground mb-4">
             CONTACT<span className="text-primary ml-4">US</span>
           </h2>
           <p className="text-gray-400">
@@ -131,7 +131,7 @@ const ContactSection = () => {
                   name="FNAME"
                   id="mce-FNAME"
                   placeholder="NAME AND SURNAME"
-                  className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:border-primary focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
                 />
               </div>
 
@@ -142,7 +142,7 @@ const ContactSection = () => {
                   name="EMAIL"
                   id="mce-EMAIL"
                   placeholder="EMAIL"
-                  className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:border-primary focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
                   required
                 />
               </div>
@@ -154,7 +154,7 @@ const ContactSection = () => {
                   name="PHONE"
                   id="mce-PHONE"
                   placeholder="PHONE"
-                  className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:border-primary focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
                 />
               </div>
 
@@ -165,7 +165,7 @@ const ContactSection = () => {
                   name="COMPANY"
                   id="mce-COMPANY"
                   placeholder="COMPANY"
-                  className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:border-primary focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
                 />
               </div>
 
@@ -176,11 +176,11 @@ const ContactSection = () => {
                   id="mce-INQUIRY"
                   placeholder="INQUIRY"
                   rows={4}
-                  className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:border-primary focus:outline-none transition-colors resize-none"
+                  className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors resize-none"
                 />
               </div>
 
-              <div className="mc-field-group input-group flex items-center space-x-6 text-white text-sm py-2">
+              <div className="mc-field-group input-group flex items-center space-x-6 text-foreground text-sm py-2">
                 <strong>Can we contact you?</strong>
                 <div className="flex items-center space-x-2">
                   <input
@@ -209,7 +209,7 @@ const ContactSection = () => {
                   type="submit"
                   name="subscribe"
                   id="mc-embedded-subscribe"
-                  className="w-full bg-primary text-black py-3 rounded-lg font-medium hover:bg-orange-500 transition-transform transform hover:scale-105"
+                  className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:bg-primary/90 transition-transform transform hover:scale-105"
                 >
                   Send inquiry
                 </button>

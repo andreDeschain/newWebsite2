@@ -4,7 +4,7 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 p-6">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex items-center">
-          <div className="bg-white rounded-full p-2 shadow-md hover:shadow-lg transition-shadow">
+          <div className="bg-foreground rounded-full p-2 shadow-md hover:shadow-lg transition-shadow">
             <img 
               src="/logov3.png" 
               alt="Lucano's co." 
@@ -29,7 +29,7 @@ const Navigation = () => {
         </div>
         
         <button
-            className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium transition-transform transform hover:scale-105 hover:bg-gray-100"
+            className="bg-foreground text-background px-6 py-2 rounded-full text-sm font-medium transition-transform transform hover:scale-105 hover:bg-muted-foreground"
             onClick={() => (window.location.href = "mailto:andrea@lucanos.it")}
           >
             email us
