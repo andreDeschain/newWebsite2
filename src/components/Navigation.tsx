@@ -3,14 +3,14 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 p-6">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-            <span 
-            className="text-black font-bold">
-            L
-            </span>
+        <div className="flex items-center">
+          <div className="bg-white rounded-full p-2 shadow-md hover:shadow-lg transition-shadow">
+            <img 
+              src="/logov3.png" 
+              alt="Lucano's co." 
+              className="h-8 w-auto"
+            />
           </div>
-          <span className="text-foreground font-light">Lucano's co.</span>
         </div>
         
         <div className="hidden md:flex items-center space-x-8 bg-black/20 backdrop-blur-sm rounded-full px-6 py-2 border border-border">

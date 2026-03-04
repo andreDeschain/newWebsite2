@@ -15,12 +15,24 @@ const ServicesSection = () => {
     },
     {
       number: "03",
+      title: "software development",
+      description: "You have an idea and want to make it real? We help you develop the system you're looking for, being it a web platform for your users, an ecommerce, or a new mobile app version of your ecosystem. Someone said AI chatbot?",
+      gradient: "from-green-500 to-teal-500"
+    },
+    {
+      number: "04",
+      title: "system integration",
+      description: "You're losing your mind matching the pieces of systems and platforms which don't talk with each other? Talk with us!",
+      gradient: "from-indigo-500 to-purple-500"
+    },
+    {
+      number: "05",
       title: "IT and system engineering", 
       description: "You need to set up your company infrastructure, and kit your team with the most advanced gear?",
       gradient: "from-purple-500 to-pink-500"
     },
     {
-      number: "04",
+      number: "06",
       title: "cloud hosting & private AI",
       description: "Cloud costs and data ownership may be the biggest challenges of our time. Are you evaluating a cloud migration? Want to leverage artificial intelligence for your company but in a private and safe setting for your data?",
       gradient: "from-teal-500 to-blue-500"
@@ -34,7 +46,7 @@ const ServicesSection = () => {
           our services
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+        <div className="grid md:grid-cols-3 gap-6 max-w-full">
           {services.map((service, index) => (
             <div 
               key={index}
